@@ -46,7 +46,6 @@ var htmlTemplate = `
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
-    <div class= 'container'>
         <div>
             <a href="/">HOME </a>
         </div>
@@ -60,8 +59,7 @@ var htmlTemplate = `
         <div>
             ${content}
             </div>
-        </div>
-        </body>
+            </body>
     </html>
     return htmlTemplate;
 `;
