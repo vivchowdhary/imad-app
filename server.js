@@ -13,8 +13,73 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+var articleOne = {
+    title : 'Article One I Vivchowdhary',
+    heading: 'Article One',
+    date : 'Sept 5, 2018',
+    content : 
+    `<p>
+                    This is my content to first article
+                    This is my content to first article
+                    This is my content to first article
+            </p>
+            <p>
+                    This is my content to first article
+                    This is my content to first article
+                    This is my content to first article
+                </p>
+                <p>
+                    This is my content to first article
+                    This is my content to first article
+                    This is my content to first article
+                </p>
+                <p>
+                    This is my content to first article
+                    This is my content to first article
+                    This is my content to first article
+                </p>`
+    
+    
+};
+
+function createTemplate (data) {
+var title = data.title;
+var heading = data.heading;
+var date = data.date;
+var content = data.content;
+
+var htmlTemplate = `
+<html>
+    <head>
+        <title>
+            $ (title)
+        </title>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+    <div class= 'container'>
+    
+        <div>
+            <a href="/">HOME </a>
+        </div>
+        <hr/>
+        <h3>
+            $ (heading)
+        </h3>
+        <div>
+            $ (date)
+        </div>
+        <div>
+            $ (content)
+            </div>
+        </div>
+        </body>
+</html>
+`;
+return htmlTemplate;
+}
 app.get('/article-one', function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 app.get('/article-two', function (req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-two.html')); 
