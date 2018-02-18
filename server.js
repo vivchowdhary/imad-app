@@ -7,9 +7,9 @@ app.use(morgan('combined'));
 
 var articles = {
      articleOne : {
-        title : "Article One I Vivchowdhary",
-        heading: "Article One",
-        date : "Sept 5, 2018",
+        title : 'Article One I Vivchowdhary',
+        heading: 'Article One',
+        date : 'Sept 5, 2018',
         content : `
                 <p>
                     This is my content to first article
@@ -35,9 +35,9 @@ var articles = {
     
 },
      articleTwo : {
-         title : "Article two I Vivchowdhary",
-    heading: "Article two",
-    date : "Sept 5, 2018",
+         title : 'Article two I Vivchowdhary',
+    heading: 'Article two',
+    date : 'Sept 5, 2018',
     content : 
     `<p>
                     This is my content to second article
@@ -47,9 +47,9 @@ var articles = {
             
      },
      articleThree : {
-         title : "Article three I Vivchowdhary",
-    heading: "Article three",
-    date : "Sept 27, 2018",
+         title : 'Article three I Vivchowdhary',
+    heading: 'Article three',
+    date : 'Sept 27, 2018',
     content : 
     `<p>
                     This is my content to third article
@@ -110,7 +110,6 @@ app.get('/article-one', function (req,res){
 });
 app.get('/article-two', function (req,res){
    res.send(createTemplate(articleTwo));
-    
 });
 app.get('/article-three', function (req,res){
    res.send(createTemplate(articleThree));
