@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: yellow;
     margin-top: 75px;
 }
 
@@ -20,7 +20,6 @@ body {
     height: 200px;
 
 max-width: 600px;
-margin: 0 auto;
 color: #49497d;
 font-family: -webkit-pictograph;
 padding-top: 40;
