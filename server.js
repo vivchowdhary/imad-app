@@ -14,14 +14,14 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one', function (req,res){
-   res.send('Article one is send here and saved'); 
+   res.send('Article one is sent here and saved'); 
 });
 app.get('/article-two', function (req,res){
-   res.send('Article two is send here and saved'); 
+   res.send('Article two is sent here and saved'); 
     
 });
 app.get('/article-three', function (req,res){
-   res.send('Article three is send here and saved'); 
+   res.send('Article three is sent here and saved'); 
     
 });
 
