@@ -61,7 +61,7 @@ var articles = {
                     This is my content to third article
                     This is my content to third article
                 </p>`
-     }              
+     },              
 };
 
 function createTemplate (data) {
