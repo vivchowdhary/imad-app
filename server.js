@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+ 'article-one' : {
   title: 'Article one I vivchowdhary',
   heading: 'article one',
   date: 'sept 5,2018',
@@ -29,8 +30,30 @@ var articleOne = {
                     This is my content to first article
                     This is my content to first article
                     This is my content to first article
-                </p>`,
+                </p>`
     
+},
+ 'article-two' : {
+     title: 'Article one I vivchowdhary',
+  heading: 'article one',
+  date: 'sept 5,2018',
+  content:     `       
+                <p>
+                    This is my content to second article
+                    This is my content to second article
+                    This is my content to second article
+                </p>`
+ },
+ 'article-three' : {
+     title: 'Article one I vivchowdhary',
+  heading: 'article one',
+  date: 'sept 5,2018',
+  content:     `       
+                <p>
+                    This is my content to THIRD article
+                    This is my content to third article
+                </p>`
+},
 };
 function createTemp(data){
     var title = data.title;
@@ -68,15 +91,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req,res){
-res.send(createTemp(articleOne));
-});
-app.get('/article-two', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-    
+app.get('/articleName', function (req,res){
+var articleNames =send.params.articleName;
+res.send(createTemp(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
