@@ -29,7 +29,7 @@ var articleOne = {
                     This is my content to first article
                     This is my content to first article
                     This is my content to first article
-                </p>`
+                </p>`,
     
 };
 function createTemplate (data) {
