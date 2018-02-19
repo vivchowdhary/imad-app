@@ -32,12 +32,11 @@ var articleOne = {
                 </p>`,
     
 };
-function createTemp(data) {
+function createTemp(data){
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-
 var htmlTemp = `
     <html>
     <head>
