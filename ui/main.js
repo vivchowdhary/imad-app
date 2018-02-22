@@ -5,5 +5,5 @@ element.innerHTML= "new value";
 
 var madi = document.getElementById("madi");
 madi.onclick = function() {
-  madi.style.marginleft = '50px'; 
+  madi.style.marginLeft = '50px'; 
 };
