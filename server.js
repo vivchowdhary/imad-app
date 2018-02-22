@@ -53,7 +53,7 @@ var articles = {
                     This is my content to THIRD article
                     This is my content to third article
                 </p>`
-},
+}
 };
 function createTemp(data){
     var title = data.title;
@@ -86,7 +86,7 @@ var htmlTemp = `
     </html>
 `;
 return htmlTemp;
-}
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
