@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: yellow;
+    background-color: white;
+    margin : 0 50px;
 }
 
 .center {
