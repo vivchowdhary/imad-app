@@ -20,6 +20,7 @@ body {
     height: 200px;
 
 max-width: 800px;
+margin: 0 auto;
 color: #49497d;
 font-family: -webkit-pictograph;
 padding-top: 40;
